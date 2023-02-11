@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down Profile Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="./images/user.png" alt="" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="./images/user.png" alt="">
+                        <h3>James Aldrino</h3>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="./images/profile.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>❯</span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="./images/setting.png" alt="">
+                        <p>Setting & Privacy</p>
+                        <span>❯</span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="./images/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>❯</span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="./images/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>❯</span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="card front-face">
+                <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                    alt="Flip Card">
+            </div>
+            <div class="card back-face">
+                <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                    alt="Flip Card">
+                <div class="info">
+                    <div class="title">CodingLab</div>
+                    <p>User interface designer and <br>front-end developer</p>
+                </div>
+                <ul>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+
+</body>
+
+</html>
